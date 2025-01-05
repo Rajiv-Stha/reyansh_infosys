@@ -15,7 +15,11 @@ const Footer = () => {
      </div>
      <p>We aim to provide the best platform to learn the skills that are required to get the job in the current market and help individuals to build and succeed in their career.</p>
      </div>
-     <div className={styles.quickLinks}>
+    
+    <div className={styles.footer_quick_wrapper}>
+
+   
+     <div className={styles.footer_quick}>
         <h2>Quick Links</h2>
         <ul className={styles.quickLinks_details}>
         <li>Our Services</li>
@@ -24,9 +28,9 @@ const Footer = () => {
         <li>ERP Software</li>
         </ul>
      </div>
-     <div className={styles.contact}>
+     <div className={styles.footer_quick}>
      <h2>Contact</h2>
-     <ul className={styles.contact_lists}>
+     <ul className={styles.quickLinks_details}>
         <li>
             <img src='/images/phone.svg' alt='phone'/>
             <p>+977- 9824480471</p>
@@ -37,12 +41,30 @@ const Footer = () => {
         </li>
         <li>
             <img src='/images/email.svg' alt='email'/>
-            <p>+977- 9824480471</p>
+            <p>reyanshinfosys2019@gmail.com</p>
         </li>
      </ul>
      </div>
-     <div className={styles.socials}></div>
+     <div className={styles.footer_quick}>
+      <h2>Socials</h2>
+      <ul className={styles.quickLinks_details}>
+        <li>
+          <img src='/images/fb.svg' alt='facebook'/>
+          <p>Facebook</p>
+        </li>
+        <li>
+          <img src='/images/instagram.svg' alt='instagram'/>
+          <p>Instagram</p>
+        </li>
+        <li>
+          <img src='/images/linkedIn.svg' alt='LinkenIn'/>
+          <p>LinkedIn</p>
+        </li>
+      </ul>
      </div>
+     </div>
+     </div>
+     <div className={styles.hr}></div>
      </footer> 
     </>
   )

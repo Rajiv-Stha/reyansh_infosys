@@ -1,0 +1,37 @@
+[
+    {
+        "img":"/images/ourService1.svg",
+        "title":"Accounting / ERP Software",
+        "desc": "Accounting/ERP (Enterprise Resource Planning) software is critical for managing financial transactions, operations, and resources within an organization."
+    },
+    {
+        "img":"/images/ourService2.svg",
+        "title":"Training & Consultancy",
+        "desc": "Training and consultancy services empower businesses by enhancing skills, optimizing processes, and providing expert guidance."
+    },
+    {
+        "img":"/images/ourService3.svg",
+        "title":"IT Equiptments Sales",
+        "desc": "We specialize in IT equipment and sales, offering a wide range of hardware solutions. We provide hardware and technology solutions to businesses and individuals."
+    },
+    {
+        "img":"/images/ourService4.svg",
+        "title":"Website & Mobile App Development",
+        "desc": "Get custom web and app development solutions tailored to your needs. From building websites to launching powerful apps, we help you connect with users and expand your reach."
+    },
+    {
+        "img":"/images/ourService5.svg",
+        "title":"Accounting / ERP Software Customization",
+        "desc": "It is our great pleasure to introduce our company Reyansh Infosys As a rapidly growing IT company serving nationally."
+    },
+    {
+        "img":"/images/ourService6.svg",
+        "title":"Software Upgrade & Migration",
+        "desc": "We provide seamless software upgrade and migration services, ensuring your systems stay up-to-date with the latest features and security enhancements."
+    },
+    {
+        "img":"/images/ourService7.svg",
+        "title":"Annual Maintenance Contract (AMC)",
+        "desc": "Our Annual Maintenance Contract (AMC) services ensure your software and IT systems run smoothly year-round."
+    }
+]

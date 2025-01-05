@@ -1,0 +1,22 @@
+[
+    {
+        "img":"/images/Vector.svg",
+        "title":"Inventory Management",
+        "desc": "Easily manage your inventory with details like batch numbers (including expiry dates), serial numbers, and parameters such as color, size, and style."
+    },
+    {
+        "img":"/images/Vector1.svg",
+        "title":"24/7 Customer Support",
+        "desc": "Customer support is available 24 hours a day, 7 days a week, ensuring that customers can get assistance at any time, regardless of the hour or day."
+    },
+    {
+        "img":"/images/Vector2.svg",
+        "title":"Financial Accounting",
+        "desc": "The software simplifies financial tasks like recording transactions, maintaining ledgers, and generating reports, ensuring accuracy and efficiency."
+    },
+    {
+        "img":"/images/vector3.svg",
+        "title":"Operation Management",
+        "desc": "Managing all business operations means overseeing tasks like sourcing materials, production, inventory, quality, and customer service, ensuring everything works together."
+    }
+]

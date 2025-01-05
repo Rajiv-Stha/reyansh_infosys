@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./herosection.module.css"
 import HeroCard from '../herocard/HeroCard'
+import data from "../../utils/data/Hero.json"
 const HeroSection = () => {
   return (
     <>
@@ -22,11 +23,10 @@ const HeroSection = () => {
     </div>
   </section>
   <div className={styles.heroCard_container}>
-
-  <HeroCard/>
-  <HeroCard/>
-  <HeroCard/>
-  <HeroCard/>
+  {data.map((d)=>{
+    return <HeroCard data={d}/>
+  })}
+  
   </div>
 
     </>

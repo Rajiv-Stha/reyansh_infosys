@@ -5,6 +5,7 @@ import HeroSection from '../../components/herosection/HeroSection'
 import AboutUs from '../../components/aboutUs/AboutUs'
 import OurService from '../../components/ourService/OurService'
 import Footer from '../../components/footer/Footer'
+import WhyAcc from '../../components/whyAcc/WhyAcc'
 
 const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ const Homepage = () => {
     </div>
     <AboutUs/>
     <OurService/>
+    <WhyAcc/>
     <Footer/>
 
     </>
