@@ -1,0 +1,38 @@
+.navbar_container{
+    width: 75%;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.navbar_content{
+    display: flex;
+    width: 75%;
+    height: 107px;
+    align-items: center;
+
+    /* background-color: blue; */
+
+}
+.logo{
+    height: 82px;
+    width: 78px;
+}
+.navList{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.navList li{
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+
+    font-weight: 500;
+}

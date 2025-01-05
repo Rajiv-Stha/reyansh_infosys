@@ -1,0 +1,57 @@
+.aboutUs_container{
+    width: 100vw;
+    height:75vh;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.aboutUs_wrapper{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6rem;
+}
+.aboutUs_wrapper img{
+    width: 286px;
+    height: 300px;
+}
+.aboutUs_content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 75%;
+    color: #fff;
+    
+}
+.aboutUs_heading{
+    font-size: 32px;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+    
+}
+.aboutUs_content p{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", serif;
+    text-align: justify;
+
+}
+.aboutUs_content button{
+    
+
+    background-color: var(--main_color);
+    border-radius: 15px;
+    width: 138px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 41px;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    cursor: pointer;
+    
+    
+}

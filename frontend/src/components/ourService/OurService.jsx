@@ -1,0 +1,23 @@
+import React from 'react'
+import styles from "./ourservice.module.css"
+import HeroCard from '../herocard/HeroCard'
+const OurService = () => {
+  return (
+    <>
+     <div className={styles.ourService_container}>
+     <h1>Our Services</h1>
+     <div className={styles.ourservice_card_container}>
+     <HeroCard/>
+     <HeroCard/>
+     <HeroCard/>
+     <HeroCard/>
+     <HeroCard/>
+     <HeroCard/>
+     <HeroCard/>
+     </div>
+     </div> 
+    </>
+  )
+}
+
+export default OurService

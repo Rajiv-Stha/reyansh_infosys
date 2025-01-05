@@ -1,0 +1,16 @@
+.homepage_container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.homepage_content{
+    background: var(--bg_color);
+    border-bottom-left-radius: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    height: 680px;
+}

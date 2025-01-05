@@ -1,0 +1,22 @@
+.ourService_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+.ourService_container h1{
+    font-size: 32px;
+    color: var(--main_color);
+    font-weight: 700;
+    font-family: "Poppins", serif;
+}
+.ourservice_card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
