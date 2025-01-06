@@ -66,7 +66,8 @@ font-family: "Poppins", serif;
     flex-direction: column;
     gap: 8px;
 }
-.quickLinks_details li{
+.quickLinks_details li a, .quickLinks_details li{
+    text-decoration: none;
     list-style: none;
     color: #fff;;
     display: flex;
@@ -75,6 +76,7 @@ font-family: "Poppins", serif;
     font-size: 16px;
     cursor: pointer;
 }
+
 .footer_quick li p{
     color: #fff;
     font-size: 16px;

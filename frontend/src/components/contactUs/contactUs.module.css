@@ -1,0 +1,57 @@
+.contactUs_container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", serif;
+
+}
+.contactUs_content{
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    /* background-color: green; */
+    height: auto;
+    gap: 4rem;
+}
+.contactUs_text{
+    width: 70%;
+    padding: 0 1rem;
+    /* background-color: red; */
+    letter-spacing: 0.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.contactUs_heading{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.heading_design{
+    width: 50px;
+    height: 5px;
+    background: var(--main_color);
+}
+.contactUs_heading h1{
+    color: var(--main_color);
+    font-size: 32px;
+    
+}
+
+.contactUs_wrapper{
+
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: space-between;
+}
+.map{
+    border: none;
+}

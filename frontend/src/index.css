@@ -6,7 +6,6 @@
   box-sizing: border-box;
   /* background-color: var(--bg_color); */
 }
-
 :root{
   --main_color:#F16100;
   --bg_color:#F9F9F9;

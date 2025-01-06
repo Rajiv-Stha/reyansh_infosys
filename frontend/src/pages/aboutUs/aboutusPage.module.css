@@ -1,0 +1,33 @@
+.aboutUs_wrapper{
+    background-color: #F9F9F9;
+    height: 230px;
+
+}
+
+.aboutUs_text{
+    width: 100%;
+    height: 50%;
+    padding: 0 10rem;
+    letter-spacing: 0.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    
+    font-family: "Poppins", serif;
+}
+.aboutUs_heading{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.heading_design{
+    width: 50px;
+    height: 5px;
+    background: var(--main_color);
+}
+.aboutUs_heading h1{
+    color: var(--main_color);
+    font-size: 32px;
+    
+}

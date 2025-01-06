@@ -18,8 +18,8 @@ const HeroSection = () => {
       <button>Learn More</button>
     </div>
     <div className={styles.hero_image}>
-      <img className={styles.dollar_img} src="/public/images/$erp.svg" alt="Dollar ERP" />
-      <img className={styles.busy_img} src="/public/images/busy-accounting-software.svg" alt="Busy Software" />
+      <img className={styles.dollar_img} src="/images/$erp.svg" alt="Dollar ERP" />
+      <img className={styles.busy_img} src="/images/busy-accounting-software.svg" alt="Busy Software" />
     </div>
   </section>
   <div className={styles.heroCard_container}>

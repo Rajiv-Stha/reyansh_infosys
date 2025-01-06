@@ -32,16 +32,24 @@ const Footer = () => {
      <h2>Contact</h2>
      <ul className={styles.quickLinks_details}>
         <li>
+        <a href='tel:+977-9824480471'>
+          
             <img src='/images/phone.svg' alt='phone'/>
             <p>+977- 9824480471</p>
+        </a>
         </li>
         <li>
+        <a href='tel:+977-9824480471'>
             <img src='/images/location.svg' alt='location'/>
             <p>+977- 9824480471</p>
+            </a>
         </li>
         <li>
+        <a href='mailto:reyanshinfosys2019@gmail.com'>
+
             <img src='/images/email.svg' alt='email'/>
             <p>reyanshinfosys2019@gmail.com</p>
+        </a>
         </li>
      </ul>
      </div>
@@ -49,16 +57,25 @@ const Footer = () => {
       <h2>Socials</h2>
       <ul className={styles.quickLinks_details}>
         <li>
+        <a href='https://www.facebook.com/reyanshbutwal' target='_blank'>
+
           <img src='/images/fb.svg' alt='facebook'/>
           <p>Facebook</p>
+        </a>
         </li>
         <li>
+        <a href='https://instagram.com' target='_blank'>
+
           <img src='/images/instagram.svg' alt='instagram'/>
           <p>Instagram</p>
+        </a>
         </li>
         <li>
+        <a href='https://linkedin.com' target='_blank'>
+
           <img src='/images/linkedIn.svg' alt='LinkenIn'/>
           <p>LinkedIn</p>
+        </a>
         </li>
       </ul>
      </div>

@@ -6,6 +6,9 @@ import AboutUs from '../../components/aboutUs/AboutUs'
 import OurService from '../../components/ourService/OurService'
 import Footer from '../../components/footer/Footer'
 import WhyAcc from '../../components/whyAcc/WhyAcc'
+import WhyErp from '../../components/whyErp/WhyErp'
+import Review from '../../components/reviews/Review'
+import ContactUs from '../../components/contactUs/ContactUs'
 
 const Homepage = () => {
   return (
@@ -17,9 +20,15 @@ const Homepage = () => {
 
     </div>
     </div>
+    <div id='about_us'>
+
     <AboutUs/>
+    </div>
     <OurService/>
     <WhyAcc/>
+    <WhyErp/>
+    <Review/>
+    <ContactUs/>
     <Footer/>
 
     </>
