@@ -11,7 +11,7 @@ const ContactUsForm = () => {
             </div>
             <div className={styles.form_input}>
             <label>Phone number <span>*</span></label>
-            <input type='number' placeholder='Enter your phone number'/>
+            <input type='text' placeholder='Enter your phone number'/>
             </div>
         </div>
         <div className={styles.form_input}>

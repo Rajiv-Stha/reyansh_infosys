@@ -35,13 +35,13 @@ const Footer = () => {
         <a href='tel:+977-9824480471'>
           
             <img src='/images/phone.svg' alt='phone'/>
-            <p>+977- 9824480471</p>
+            <p>071-438201,438246, 9857036188</p>
         </a>
         </li>
         <li>
         <a href='tel:+977-9824480471'>
             <img src='/images/location.svg' alt='location'/>
-            <p>+977- 9824480471</p>
+            <p>Butwal, Rupandehi, Nepal</p>
             </a>
         </li>
         <li>

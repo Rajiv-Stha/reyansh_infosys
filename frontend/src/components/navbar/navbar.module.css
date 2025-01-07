@@ -1,7 +1,11 @@
+.nav_wrapper{
+    background-color: var(--bg_color);
+    width: 100%;
+}
+
 .navbar_container{
     width: 60%;
     display: flex;
-    background-color: #ffffff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     align-items: center;
     justify-content: space-around;
@@ -11,6 +15,7 @@
     position: sticky;
     top: 0;
 }
+
 .navbar_content{
     display: flex;
     width: 80%;
@@ -33,6 +38,9 @@
 .navList li{
     padding: 0 1.2rem;
     border-right: 2px solid #C3C3C3;
+}
+.navList li:nth-child(4){
+    border: none !important;
 }
 .navList li, .navList li a{
     text-decoration: none;

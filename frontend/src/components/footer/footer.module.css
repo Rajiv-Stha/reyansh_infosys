@@ -72,11 +72,14 @@ font-family: "Poppins", serif;
     color: #fff;;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 12px;
     font-size: 16px;
     cursor: pointer;
 }
 
+.quickLinks_details li a img{
+    width: 20px;
+}
 .footer_quick li p{
     color: #fff;
     font-size: 16px;

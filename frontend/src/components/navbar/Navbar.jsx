@@ -1,45 +1,33 @@
-import React from 'react'
-import styles from "./navbar.module.css"
-import { Link } from 'react-router-dom'
+import React from "react";
+import styles from "./navbar.module.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
+      <div className={styles.nav_wrapper}>
         <div className={styles.navbar_container}>
-        <div className={styles.navbar_content}>
-        <Link to={"/"}>
-
-
-        <img className={styles.logo} src='/images/logo.svg' alt='logo'/>
-        </Link>
-        <ul className={styles.navList}>
-            <li>
+          <div className={styles.navbar_content}>
             <Link to={"/"}>
-
-            Home
+              <img className={styles.logo} src="/images/logo.svg" alt="logo" />
             </Link>
-            </li>
-            <li>
-
-            <Link to={"about_us"}>
-
-            About Us
-            </Link>
-
-            </li>
-            <li>
-            <a href=''>
-
-            Our Services
-            </a>
-            </li>
-            <li>Contact</li>
-            
-        </ul>
+            <ul className={styles.navList}>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"about_us"}>About Us</Link>
+              </li>
+              <li>
+                <a href="#services">Our Services</a>
+              </li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </div>
-        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -5,7 +5,7 @@ import data from "../../utils/data/Ourservices.json"
 const OurService = () => {
   return (
     <>
-     <div className={styles.ourService_container}>
+     <div id="services" className={styles.ourService_container}>
      <h1>Our Services</h1>
      <div className={styles.ourservice_card_container}>
      {data.map((d)=>{
