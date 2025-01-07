@@ -1,35 +1,85 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import styles from "./contactUsForm.module.css"
+import emailjs from '@emailjs/browser';
+import { Toaster, toast } from 'sonner'
+
 const ContactUsForm = () => {
+  const [value, setValue] = useState({
+    username: "",
+    phone:"",
+    useremail:"",
+    subject:"",
+    message:"",
+  })
+  const { username, phone, useremail, subject, message } = value;
+
+  const handleReset=()=>{
+    setValue({
+      username: "",
+      phone: "",
+      useremail: "",
+      subject:"",
+      message: ""
+    });
+  }
+  const handleChange = (e) => {
+    const { name, value } = e.target; 
+    setValue((prev) => ({
+      ...prev, 
+      [name]: value, 
+    }));
+  };
+   const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_yf5xeks', 'template_k6t216t', form.current, {
+        publicKey: '3-wAiPTMVEpsSQasW',
+      })
+      .then(
+        () => {
+          handleReset()
+          toast.success('Form Submitted Successfully')
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    };
   return (
     <>
-      <form>
+
+      <form ref={form} onSubmit={sendEmail}>
         <div className={styles.form_row}>
             <div className={styles.form_input}>
                 <label>Name <span>*</span></label>
-                <input type='text' placeholder='Enter your name'/>
+                <input type='text' name='username' onChange={handleChange} value={username} placeholder='Enter your name'/>
             </div>
             <div className={styles.form_input}>
             <label>Phone number <span>*</span></label>
-            <input type='text' placeholder='Enter your phone number'/>
+            <input type='text' name='phone' value={phone} onChange={handleChange} placeholder='Enter your phone number'/>
             </div>
         </div>
         <div className={styles.form_input}>
         <label>E-mail address <span>*</span></label>
-        <input type='email' placeholder='Enter your email address'/>
+        <input type='email' name='useremail' value={useremail} onChange={handleChange} placeholder='Enter your email address'/>
         </div>
         <div className={styles.form_input}>
         <label>Subject <span>*</span></label>
-        <input type='text' placeholder='Enter subject'/>
+        <input type='text' name='subject' value={subject} onChange={handleChange} placeholder='Enter subject'/>
         </div>
         <div className={styles.form_input}>
         <label>Message <span>*</span></label>
-        <textarea placeholder='Your message here'/>
+        <textarea name='message' value={message} onChange={handleChange} placeholder='Your message here'/>
         </div>
         <button className={styles.contact_submitBtn}>
             Submit
         </button>
       </form>
+      
     </>
   )
 }
