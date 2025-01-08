@@ -6,6 +6,7 @@
   box-sizing: border-box;
   /* background-color: var(--bg_color); */
   scroll-behavior: smooth;
+
 }
 :root{
   --main_color:#F16100;
