@@ -16,6 +16,7 @@
 .ourservice_card_container{
     display: flex;
     align-items: center;
+    width: 85%;
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
