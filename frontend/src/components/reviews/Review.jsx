@@ -13,7 +13,7 @@ const Review = () => {
             <div className={styles.heading_design}></div>
             <h1>What Our Client Say</h1>
         </div>
-        <p className={styles.reviewText}>We always take care of our clients by creating experiences that put our clients first. Thevast majority of our clients continue working with us after the project is complete.</p>
+        <p className={styles.reviewText}>We always take care of our clients by creating experiences that put our clients first. The vast majority of our clients continue working with us after the project is complete.</p>
         </div>
         <div className={styles.review_card_container}>
        {data.map((d)=>{

@@ -1,0 +1,17 @@
+.goal_wrapper{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.goal_wrapper h3{
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    color: var(--main_color);
+}
+.goal_wrapper p{
+    /* background-color: blueviolet; */
+    padding-left: 2rem;
+    font-size: 18px;
+}

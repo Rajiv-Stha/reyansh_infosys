@@ -1,22 +1,36 @@
 .aboutUs_container{
     width: 100vw;
-    height:75vh;
+    height:auto;
     background-color: #1e1e1e;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3rem 0;
    
 }
 .aboutUs_wrapper{
     width: 85%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
     gap: 6rem;
 }
-.aboutUs_wrapper img{
+.logo_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+}
+.logo_wrapper img{
     width: 286px;
     height: 300px;
+}
+.logo_wrapper h1{
+    color: var(--main_color);
+    font-family: "Montserrat", serif;
+    font-size: 32px;
+
 }
 .aboutUs_content{
     display: flex;
@@ -52,6 +66,27 @@
     font-size: 16px;
     font-family: "Poppins", serif;
     cursor: pointer;
+    transition: all 0.3s ease-in-out; 
     
+    
+}
+.aboutUs_content button:hover{
+    background-color: #EB1F27;
+}
+
+.aboutUs_heading{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.heading_design{
+    width: 50px;
+    height: 5px;
+    background: var(--main_color);
+}
+.aboutUs_heading h1{
+    font-size: 32px;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
     
 }

@@ -37,6 +37,10 @@
     font-size: 16px;
     font-family: "Poppins", serif;
     cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+.hero_text button:hover{
+    background-color: #EB1F27;
 }
 .hero_image{
 display: flex;

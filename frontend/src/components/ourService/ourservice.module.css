@@ -21,3 +21,18 @@
     gap: 3rem;
     flex-wrap: wrap;
 }
+.service_heading{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.heading_design{
+    width: 50px;
+    height: 5px;
+    background: var(--main_color);
+}
+.service_heading h1{
+    color: var(--main_color);
+    font-size: 32px;
+    
+}

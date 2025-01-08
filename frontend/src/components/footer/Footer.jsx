@@ -82,6 +82,7 @@ const Footer = () => {
      </div>
      </div>
      <div className={styles.hr}></div>
+     <p className={styles.copyright}>&copy; 2025 All Right Reserved By Reyansh Infosys Designed and Developed By <a href='https://tech.somarjun.com/' target='_blank'>Somarjun Tech</a></p>
      </footer> 
     </>
   )

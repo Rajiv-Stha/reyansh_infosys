@@ -2,6 +2,8 @@ import React from 'react'
 import styles from "./aboutusPage.module.css"
 import Navbar from '../../components/navbar/Navbar'
 import AboutUs_goal from '../../components/aboutUs_goal/AboutUs_goal'
+import Review from '../../components/reviews/Review'
+import Footer from '../../components/footer/Footer'
 
 const AboutUs = () => {
   return (
@@ -32,7 +34,8 @@ const AboutUs = () => {
     </div>
     </div>
    <AboutUs_goal/>
-   
+   <Review/>
+   <Footer/>
       
     </>
   )
