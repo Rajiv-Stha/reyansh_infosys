@@ -3,7 +3,7 @@ import styles from "./whyAcc.module.css"
 const WhyAcc = () => {
   return (
     <>
-      <div className={styles.whyAcc_container}>
+      <div id='whyAcc' className={styles.whyAcc_container}>
       <div className={styles.whyAcc_content}>
 
       <div className={styles.whyAcc_desc}>

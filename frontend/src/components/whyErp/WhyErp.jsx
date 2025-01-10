@@ -4,7 +4,7 @@ import styles from "./whyerp.module.css"
 const WhyErp = () => {
   return (
     <>
-          <div className={styles.whyErp_container}>
+          <div id='whyErp' className={styles.whyErp_container}>
           <div className={styles.whyErp_content}>
     
           <div className={styles.whyErp_desc}>

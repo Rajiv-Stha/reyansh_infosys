@@ -12,7 +12,7 @@ const Navbar = () => {
               <img className={styles.logo} src="/images/logo.svg" alt="logo" />
             </Link>
             <ul className={styles.navList}>
-              <li>
+              <li className={styles.active}>
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
@@ -21,7 +21,12 @@ const Navbar = () => {
               <li>
                 <a href="#services">Our Services</a>
               </li>
-              <li>Contact</li>
+              <li>
+              <a href="#contactUs">
+
+              Contact
+              </a>
+              </li>
             </ul>
           </div>
         </div>

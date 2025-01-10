@@ -5,7 +5,7 @@ import ContactUsForm from '../contactusForm/ContactUsForm'
 const ContactUs = () => {
   return (
     <>
-    <div className={styles.contactUs_container}>
+    <div id='contactUs' className={styles.contactUs_container}>
     <div className={styles.contactUs_content}>
      <div className={styles.contactUs_text}>
     
@@ -18,7 +18,35 @@ const ContactUs = () => {
             </div>
             <div className={styles.contactUs_wrapper}>
                 <ContactUsForm/>
+                <div className={styles.contactInfo_container}>
+                <div className={styles.contactDetails_wrapper}>
+                <div className={styles.contactDetails_left}>
+                  <h2>Mail Us at:</h2>
+                  <div className={styles.contactInfo_box}>
+                    <p>For Busy account software: </p>
+                    <span>reyansh.busy2019@gmail.com</span>
+                  </div>
+                  <div className={styles.contactInfo_box}>
+                    <p>For DollarERp: </p>
+                    <span>reyansh.dollarerp@gmail.com</span>
+                  </div>
+                  <div className={styles.contactInfo_box}>
+                    <p>For others IT services & Equipments: </p>
+                    <span>Reyansh.infosys2019@gmail.com</span>
+                  </div>
+                </div>
+                <div className={styles.contactDetails_right}>
+                  <h2>Call Us at:</h2>
+                <div className={styles.callDetails}>
+                  <img src='/images/call.svg' alt='phone' />
+                  <p>071-438201, 438246 <br/>9857036188<br/>9867021077</p>
+                </div>
+                </div>
+
+                </div>
+                <h2 className={styles.findUs_text}>Find Us At</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.200432686759!2d83.46650159303249!3d27.65793467051839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399684350f43c393%3A0x1e74d5ecc4f83d0f!2sSita%20Rice%20Mill%20(Sita%20Food%20Industries)!5e0!3m2!1sen!2snp!4v1736179200326!5m2!1sen!2snp" width="600" height="450" className={styles.map} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
     </div>
 

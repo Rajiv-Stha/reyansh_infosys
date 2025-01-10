@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from "./footer.module.css"
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
      <footer>
@@ -22,10 +24,31 @@ const Footer = () => {
      <div className={styles.footer_quick}>
         <h2>Quick Links</h2>
         <ul className={styles.quickLinks_details}>
-        <li>Our Services</li>
-        <li>About Us</li>
-        <li>Accounting Software</li>
-        <li>ERP Software</li>
+        <li>
+        <a href='#services'>
+
+        Our Services
+        </a>
+        </li>
+        <li>
+        <Link to={"/about_us"}>
+
+        About Us
+        </Link>
+        </li>
+        <li>
+        <a href='#whyAcc'>
+
+        Accounting Software
+        </a>
+        </li>
+        <li>
+        <a href='#whyErp'>
+
+
+        ERP Software
+        </a>
+        </li>
         </ul>
      </div>
      <div className={styles.footer_quick}>
@@ -82,7 +105,7 @@ const Footer = () => {
      </div>
      </div>
      <div className={styles.hr}></div>
-     <p className={styles.copyright}>&copy; 2025 All Right Reserved By Reyansh Infosys Designed and Developed By <a href='https://tech.somarjun.com/' target='_blank'>Somarjun Tech</a></p>
+     <p className={styles.copyright}>&copy; {currentYear} All Right Reserved By Reyansh Infosys Designed and Developed By <a href='https://tech.somarjun.com/' target='_blank'>Somarjun Tech</a></p>
      </footer> 
     </>
   )
