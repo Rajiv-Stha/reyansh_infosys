@@ -53,22 +53,22 @@
     position: relative;
 }
 
-/* 
+
 .navList li.active::after {
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: -44px;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 5px;
     background-color: var(--main_color);
     border-radius: 9999px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   
-  Optional: Add hover effect
-  .navList li:hover::after {
+  /* Optional: Add hover effect */
+  /* .navList li:hover::after {
     content: '';
     position: absolute;
     bottom: -8px;

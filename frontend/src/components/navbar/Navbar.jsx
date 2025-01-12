@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const [activePage, setActivePage] = useState("/")
+  const location = useLocation()
+  // console.log(location)
+  useEffect(()=>{
+    setActivePage(location.pathname)
+  },[location.pathname])
+  const navContent = [
+    {
+      path: "/",
+      text:"Home",
+    },
+    {
+      path: "/about_us",
+      text:"About Us",
+    }
+  ]
   return (
     <>
       <div className={styles.nav_wrapper}>
@@ -12,12 +28,14 @@ const Navbar = () => {
               <img className={styles.logo} src="/images/logo.svg" alt="logo" />
             </Link>
             <ul className={styles.navList}>
-              <li className={styles.active}>
-                <Link to={"/"}>Home</Link>
+            {
+              navContent.map((item)=>{
+                return <li className={[item.path===activePage? styles.active:null]}>
+                <Link to={item.path}>{item.text}</Link>
               </li>
-              <li>
-                <Link to={"about_us"}>About Us</Link>
-              </li>
+              })
+            }
+              
               <li>
                 <a href="#services">Our Services</a>
               </li>
