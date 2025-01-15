@@ -71,7 +71,8 @@ const Footer = () => {
         <a href='mailto:reyanshinfosys2019@gmail.com'>
 
             <img src='/images/email.svg' alt='email'/>
-            <p>reyanshinfosys2019@gmail.com</p>
+            <p>reyanshinfosys2019@gmail.com<br/>Reyansh.busy@gmail.com</p>
+
         </a>
         </li>
      </ul>

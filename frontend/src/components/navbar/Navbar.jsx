@@ -4,11 +4,28 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [activePage, setActivePage] = useState("/")
+  const [activeHash, setActiveHash] = useState("")
   const location = useLocation()
-  // console.log(location)
+  
+
+
+  console.log("outer",location)
   useEffect(()=>{
-    setActivePage(location.pathname)
-  },[location.pathname])
+    console.log("inner",location)
+    if(location.pathname ==="/" || location.pathname==="/about_us"){
+
+      setActivePage(location.pathname)
+    }else{
+      setActivePage("/")
+    }
+  },[location.pathname, location.hash])
+  useEffect(()=>{
+    if(activeHash ==="#services" || activeHash ==="contactUs"){
+      
+    }
+
+  },[activeHash])
+
   const navContent = [
     {
       path: "/",
@@ -37,13 +54,13 @@ const Navbar = () => {
             }
               
               <li>
-                <a href="#services">Our Services</a>
+              <a href="#services">Our Services</a>
+
+
               </li>
               <li>
-              <a href="#contactUs">
+              <a href="#contactUs">Contact</a>
 
-              Contact
-              </a>
               </li>
             </ul>
           </div>
