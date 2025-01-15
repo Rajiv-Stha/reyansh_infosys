@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [activePage, setActivePage] = useState("/")
-  const [activeHash, setActiveHash] = useState("")
   const location = useLocation()
   
 
@@ -12,19 +11,14 @@ const Navbar = () => {
   console.log("outer",location)
   useEffect(()=>{
     console.log("inner",location)
-    if(location.pathname ==="/" || location.pathname==="/about_us"){
+    if(location.pathname ==="/" || location.pathname==="/about_us" || location.pathname==="/ourservice" || location.pathname=="/contactUs"){
 
       setActivePage(location.pathname)
     }else{
       setActivePage("/")
     }
-  },[location.pathname, location.hash])
-  useEffect(()=>{
-    if(activeHash ==="#services" || activeHash ==="contactUs"){
-      
-    }
-
-  },[activeHash])
+  },[location.pathname])
+ 
 
   const navContent = [
     {
@@ -34,6 +28,14 @@ const Navbar = () => {
     {
       path: "/about_us",
       text:"About Us",
+    },
+    {
+      path: "/ourservice",
+      text:"Services",
+    },
+    {
+      path: "/contactUs",
+      text:"Contact",
     }
   ]
   return (
@@ -53,15 +55,19 @@ const Navbar = () => {
               })
             }
               
-              <li>
-              <a href="#services">Our Services</a>
+              {/* <li>
+              <Link to={"/ourservice"}>
+              Our Services
+              </Link>
 
 
               </li>
               <li>
-              <a href="#contactUs">Contact</a>
+              <Link to={"/contactUs"}>
+              Contact
+              </Link>
 
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

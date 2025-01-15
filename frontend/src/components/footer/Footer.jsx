@@ -54,11 +54,18 @@ const Footer = () => {
      <div className={styles.footer_quick}>
      <h2>Contact</h2>
      <ul className={styles.quickLinks_details}>
+     <li>
+        <a href='tel:+977-9824480471'>
+          
+            <img src='/images/tel.svg' alt='phone'/>
+            <p>071-438201, 438246</p>
+        </a>
+        </li>
         <li>
         <a href='tel:+977-9824480471'>
           
             <img src='/images/phone.svg' alt='phone'/>
-            <p>071-438201,438246, 9857036188</p>
+            <p>9857036188</p>
         </a>
         </li>
         <li>
