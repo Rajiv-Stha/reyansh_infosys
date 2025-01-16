@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+    /* width: 100vw; */
 }
 .homepage_content{
     background: var(--bg_color);

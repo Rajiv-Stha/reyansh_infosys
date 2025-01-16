@@ -8,6 +8,9 @@ import Footer from '../../components/footer/Footer'
 const AboutUs = () => {
   return (
     <>
+   
+
+   
     <Navbar/>
     <div className={styles.aboutUs_headWrapper}>
     <div className={styles.aboutUs_headWrapper_content}>
@@ -36,7 +39,7 @@ const AboutUs = () => {
    <AboutUs_goal/>
    <Review/>
    <Footer/>
-      
+
     </>
   )
 }
