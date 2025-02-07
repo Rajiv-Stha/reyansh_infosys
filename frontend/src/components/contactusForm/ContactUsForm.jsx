@@ -2,6 +2,10 @@ import React, {useRef, useState} from 'react'
 import styles from "./contactUsForm.module.css"
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'sonner'
+//motion
+import {motion} from "framer-motion"
+// variants
+import {fadeIn} from "../variants"
 
 const ContactUsForm = () => {
   const [value, setValue] = useState({
@@ -52,7 +56,12 @@ const ContactUsForm = () => {
   return (
     <>
 
-      <form ref={form} onSubmit={sendEmail}>
+      <motion.form
+      variants={fadeIn("down",0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{once:true, amount:0.7}}
+       ref={form} onSubmit={sendEmail}>
         <div className={styles.form_row}>
             <div className={styles.form_input}>
                 <label>Name <span>*</span></label>
@@ -78,7 +87,7 @@ const ContactUsForm = () => {
         <button className={styles.contact_submitBtn}>
             Submit
         </button>
-      </form>
+      </motion.form>
       
     </>
   )

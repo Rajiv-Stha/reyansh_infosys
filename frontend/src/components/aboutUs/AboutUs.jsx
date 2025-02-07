@@ -15,7 +15,7 @@ const AboutUs = () => {
       variants={fadeIn("down",0.2)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{once:false, amount:0.7}}
+      viewport={{once:true, amount:0.7}}
        className={styles.logo_wrapper}>
 
       <img src='/images/logo.svg' alt='logo'/>
@@ -25,7 +25,7 @@ const AboutUs = () => {
        variants={fadeIn("up",0.2)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{once:false, amount:0.7}}
+      viewport={{once:true, amount:0.7}}
        className={styles.aboutUs_content}>
         <div className={styles.aboutUs_heading}>
                   <div className={styles.heading_design}></div>
