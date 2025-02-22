@@ -15,3 +15,18 @@
     padding: 2rem 5rem;
     height: 573px;
 }
+
+
+/* media query */
+@media only screen and (min-width: 769px) and (max-width: 992px){
+   .homepage_content{
+    padding: 2rem;
+    width: 95%;
+    height: auto;
+    background-color: white;
+    gap: 1.3rem;
+   }
+}
+@media screen and (min-width:600px) and (max-width:768px){}
+@media screen and (min-width:480px) and (max-width:599px){}
+@media screen  and (max-width:480px){}

@@ -80,3 +80,36 @@
     transition: all 0.3s ease;
   }
    */
+
+   @media (max-width: 992px) {
+    .navbar_container {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar_container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navList {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar_content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navList {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+    .navList li {
+      padding: 10px 0;
+      border: none;
+    }
+  }

@@ -61,3 +61,30 @@ gap: 2rem;
     display: flex;
     gap: 1rem;
 }
+
+/* media query */
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    .hero_text h1{
+        font-size: 45px;
+    }
+    .hero_text p{
+        font-size: 18px;
+    }
+    .dollar_img{
+        width: 320px;
+        height: 105px;
+    }
+    ._hero_text_po7f2_5 button {
+        border-radius: 10px;
+        width: 120px;
+        height: 37px;
+        font-size: 14px;
+    }
+    .heroCard_container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px){}
+@media screen and (min-width:480px) and (max-width:599px){}
+@media screen  and (max-width:480px){}

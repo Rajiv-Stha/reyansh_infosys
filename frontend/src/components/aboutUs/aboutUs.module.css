@@ -91,3 +91,33 @@
     font-weight: 900;
     
 }
+
+/* media query */
+@media only screen and (min-width: 769px) and (max-width: 992px){
+.aboutUs_wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.logo_wrapper img{
+    height: 180px;
+}
+.aboutUs_content{
+    gap: 1rem;
+    width: 85%;
+}
+.aboutUs_content button{
+    border-radius: 10px;
+    width: 125px;
+    height: 35px;
+    font-size: 16px;
+    height: 40px;
+}
+.logo_wrapper{
+    width: 85%;
+    align-items: flex-start;
+}
+}
+@media screen and (min-width:600px) and (max-width:768px){}
+@media screen and (min-width:480px) and (max-width:599px){}
+@media screen  and (max-width:480px){}
